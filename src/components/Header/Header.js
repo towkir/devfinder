@@ -3,7 +3,7 @@ import './Header.css'
 
 function Header() {
   return (
-    <header className="Header">
+    <header className="header">
       <h1>devfinder</h1>
       <ThemeToggler theme={'dark'} />
     </header>
