@@ -10,14 +10,6 @@
   --text-secondary: #FFFFFF;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --body-background: #141D2F;
-    --text-primary: #FFFFFF;
-    --text-secondary: #FFFFFF;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -29,4 +21,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--body-background);
   color: var(--text-secondary);
+  transition-property: color, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
