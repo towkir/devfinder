@@ -1,5 +1,5 @@
-import IconMoon from 'components/InteractiveIcons/IconMoon/IconMoon';
-import IconSun from 'components/InteractiveIcons/IconSun/IconSun';
+import IconMoon from 'components/VectorIcons/IconMoon/IconMoon';
+import IconSun from 'components/VectorIcons/IconSun/IconSun';
 import './ThemeToggler.css';
 import { useState, useEffect } from 'react';
 function ThemeToggler() {
