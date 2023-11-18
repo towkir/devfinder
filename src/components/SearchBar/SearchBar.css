@@ -1,0 +1,54 @@
+.searchbar {
+  padding: 10px;
+  background-color: var(--card-background);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.2);
+  transition-property: color, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.searchbar svg {
+  width: 30px;
+  margin: 0 18px;
+}
+
+.searchbar input[type="text"] {
+  font-family: inherit;
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  color: var(--text-primary);
+  width: 100%;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 8px;
+  caret-color: var(--color-blue);
+  transition: color 0.3s ease-in-out;
+}
+
+.searchbar input[type="text"]:focus-visible {
+  outline: none;
+}
+
+.searchbar button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+:root[data-theme="dark"] {
+  .searchbar {
+    box-shadow: none;
+  }
+}
