@@ -1,7 +1,7 @@
+import { useState, useEffect } from 'react';
 import IconMoon from 'components/VectorIcons/IconMoon';
 import IconSun from 'components/VectorIcons/IconSun';
 import './ThemeToggler.css';
-import { useState, useEffect } from 'react';
 function ThemeToggler() {
   useEffect(() => {
     retrieveAndApplyTheme();
