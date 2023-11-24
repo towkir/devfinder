@@ -1,0 +1,95 @@
+.user-card {
+  padding: 48px;
+  background-color: var(--card-background);
+  border-radius: 15px;
+  box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.2);
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.user-card .primary-info {
+  padding-left: 154px;
+  position: relative;
+}
+
+.user-card .primary-info .avatar {
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.user-card .primary-info .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.user-card .primary-info .names-and-date {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.user-card .primary-info .names-and-date .name h1 {
+  font-size: 26px;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+.user-card .primary-info .names-and-date .name p {
+  margin-bottom: 20px;
+}
+
+.user-card .primary-info .names-and-date .name p a {
+  font-size: 16px;
+  color: var(--color-blue);
+}
+
+.user-card .primary-info .names-and-date .date {
+  font-size: 15px;
+  line-height: 48px;
+}
+
+.user-card .detailed-info {
+  padding-left: 154px;
+}
+
+.user-card .detailed-info p.bio {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+.user-card .detailed-info .highlight {
+  background-color: var(--body-background);
+  padding: 15px 32px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  transition-property: color, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.user-card .detailed-info .highlight div .label {
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.user-card .detailed-info .highlight div p {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 34px;
+}
+
+:root[data-theme="dark"] {
+  .user-card {
+    box-shadow: none;
+  }
+}
