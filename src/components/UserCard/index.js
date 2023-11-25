@@ -1,3 +1,7 @@
+import IconLocation from 'components/VectorIcons/IconLocation';
+import IconLink from 'components/VectorIcons/IconLink';
+import IconTwitter from 'components/VectorIcons/IconTwitter';
+import IconCompany from 'components/VectorIcons/IconCompany';
 import './index.css';
 
 function UserCard({user}) {
@@ -30,6 +34,16 @@ function UserCard({user}) {
             <span className="label">Following</span>
             <p>{user.following}</p>
           </div>
+        </div>
+        <div className="detailed-links">
+          <ul>
+            <li><IconLocation/> {user.location}</li>
+            <li><IconLink/> {user.blog}</li>
+          </ul>
+          <ul>
+            <li><IconTwitter/> {user.twitter_username || 'Not Available'}</li>
+            <li><IconCompany/> {user.company}</li>
+          </ul>
         </div>
       </div>
     </div>

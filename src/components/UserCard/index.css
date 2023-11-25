@@ -69,6 +69,7 @@
   background-color: var(--body-background);
   padding: 15px 32px;
   border-radius: 10px;
+  margin-bottom: 36px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -86,6 +87,29 @@
   font-size: 22px;
   font-weight: bold;
   line-height: 34px;
+}
+
+.user-card .detailed-info .detailed-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-card .detailed-info .detailed-links ul {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.user-card .detailed-info .detailed-links ul li {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.user-card .detailed-info .detailed-links ul li:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.user-card .detailed-info .detailed-links ul li svg {
+  vertical-align: bottom;
 }
 
 :root[data-theme="dark"] {
