@@ -43,7 +43,7 @@ function UserCard({user}) {
           <ul>
             <li className={setDeadClass(user.location)}><IconLocation/> {user.location || 'Not Available'}</li>
             <li className={setDeadClass(user.blog)}>
-              <IconLink/> {user.blog ? <a href={user.blog}>{user.blog}</a> : 'Not linked'}
+              <IconLink/> {user.blog ? <a href={user.blog} target="_blank">{user.blog}</a> : 'Not linked'}
             </li>
           </ul>
           <ul>
