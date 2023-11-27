@@ -2,6 +2,7 @@ import IconLocation from 'components/VectorIcons/IconLocation';
 import IconLink from 'components/VectorIcons/IconLink';
 import IconTwitter from 'components/VectorIcons/IconTwitter';
 import IconCompany from 'components/VectorIcons/IconCompany';
+import formatDate from 'helper/date';
 import './index.css';
 
 function UserCard({user}) {
@@ -19,7 +20,7 @@ function UserCard({user}) {
             <h1>{user.name}</h1>
             <p><a href={user.html_url} target="_blank">@{user.login}</a></p>
           </div>
-          <p className="date">{user.created_at}</p>
+          <p className="date">Joined {formatDate(user.created_at)}</p>
         </div>
       </div>
       <div className="detailed-info">
