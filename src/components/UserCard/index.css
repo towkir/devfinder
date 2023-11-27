@@ -120,8 +120,6 @@
   vertical-align: bottom;
 }
 
-:root[data-theme="dark"] {
-  .user-card {
-    box-shadow: none;
-  }
+:root[data-theme="dark"] .user-card {
+  box-shadow: none;
 }

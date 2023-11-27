@@ -47,8 +47,6 @@
   cursor: pointer;
 }
 
-:root[data-theme="dark"] {
-  .searchbar {
-    box-shadow: none;
-  }
+:root[data-theme="dark"] .searchbar {
+  box-shadow: none;
 }
