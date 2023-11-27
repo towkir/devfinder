@@ -104,6 +104,14 @@
   line-height: 22px;
 }
 
+.user-card .detailed-info .detailed-links ul li.unavailable {
+  opacity: 0.5;
+}
+
+.user-card .detailed-info .detailed-links ul li a {
+  color: inherit;
+}
+
 .user-card .detailed-info .detailed-links ul li:not(:last-child) {
   margin-bottom: 19px;
 }

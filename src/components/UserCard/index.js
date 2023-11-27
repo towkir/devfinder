@@ -5,6 +5,9 @@ import IconCompany from 'components/VectorIcons/IconCompany';
 import './index.css';
 
 function UserCard({user}) {
+  function setDeadClass(data) {
+    return !data ? 'unavailable' : null;
+  }
   return (
     <div className="user-card">
       <div className="primary-info">
@@ -37,12 +40,14 @@ function UserCard({user}) {
         </div>
         <div className="detailed-links">
           <ul>
-            <li><IconLocation/> {user.location}</li>
-            <li><IconLink/> {user.blog}</li>
+            <li className={setDeadClass(user.location)}><IconLocation/> {user.location || 'Not Available'}</li>
+            <li className={setDeadClass(user.blog)}>
+              <IconLink/> {user.blog ? <a href={user.blog}>{user.blog}</a> : 'Not linked'}
+            </li>
           </ul>
           <ul>
-            <li><IconTwitter/> {user.twitter_username || 'Not Available'}</li>
-            <li><IconCompany/> {user.company}</li>
+            <li className={setDeadClass(user.twitter_username)}><IconTwitter/> {user.twitter_username || 'Not Available'}</li>
+            <li className={setDeadClass(user.company)}><IconCompany/> {user.company || 'Not Set'}</li>
           </ul>
         </div>
       </div>
