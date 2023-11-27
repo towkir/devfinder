@@ -1,0 +1,8 @@
+svg#icon-link g {
+  fill: #4b6a9b;
+  transition: fill 0.3s ease-in-out;
+}
+
+:root[data-theme="dark"] svg#icon-link g {
+  fill: #fff;
+}

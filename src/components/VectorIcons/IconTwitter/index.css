@@ -1,0 +1,8 @@
+svg#icon-twitter path {
+  fill: #4b6a9b;
+  transition: fill 0.3s ease-in-out;
+}
+
+:root[data-theme="dark"] svg#icon-twitter path {
+  fill: #fff;
+}
