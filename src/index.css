@@ -25,6 +25,10 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'Space Mono', monospace;
   -webkit-font-smoothing: antialiased;
@@ -34,4 +38,14 @@ body {
   transition-property: color, background-color;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body #root {
+  width: 100%;
+  max-width: 730px;
+  margin: 30px auto;
 }
