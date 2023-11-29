@@ -49,3 +49,10 @@ body #root {
   max-width: 730px;
   margin: 30px auto;
 }
+
+@media screen and (max-width: 768px) {
+  body #root {
+    max-width: 573px;
+    margin: 30px 24px;
+  }
+}

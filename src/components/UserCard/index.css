@@ -123,3 +123,36 @@
 :root[data-theme="dark"] .user-card {
   box-shadow: none;
 }
+
+@media screen and (max-width: 768px) {
+  .user-card .primary-info,
+  .user-card .detailed-info {
+    padding-left: 0;
+  }
+
+  .user-card .primary-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .user-card .primary-info .avatar {
+    position: unset;
+    margin-right: 40px;
+  }
+  .user-card .primary-info .names-and-date {
+    display: block;
+  }
+
+  .user-card .primary-info .names-and-date .name h1 {
+    line-height: 39px;
+  }
+
+  .user-card .primary-info .names-and-date .name p {
+    margin-bottom: unset;
+  }
+
+  .user-card .primary-info .names-and-date .date {
+    line-height: 1.8;
+  }
+}
