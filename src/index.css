@@ -27,6 +27,7 @@
 
 html {
   height: 100%;
+  font-size: 16px;
 }
 
 body {
@@ -52,7 +53,13 @@ body #root {
 
 @media screen and (max-width: 768px) {
   body #root {
-    max-width: 573px;
+    max-width: 574px;
     margin: 30px 24px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  html {
+    font-size: 14px;
   }
 }

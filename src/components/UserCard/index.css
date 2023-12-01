@@ -36,7 +36,7 @@
 }
 
 .user-card .primary-info .names-and-date .name h1 {
-  font-size: 26px;
+  font-size: 1.63rem;
   line-height: 48px;
   font-weight: bold;
 }
@@ -46,12 +46,12 @@
 }
 
 .user-card .primary-info .names-and-date .name p a {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--color-blue);
 }
 
 .user-card .primary-info .names-and-date .date {
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 48px;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .user-card .detailed-info p.bio {
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 24px;
   margin-bottom: 32px;
 }
@@ -79,12 +79,12 @@
 }
 
 .user-card .detailed-info .highlight div .label {
-  font-size: 13px;
-  line-height: 19px;
+  font-size: 0.88rem;
+  line-height: 20px;
 }
 
 .user-card .detailed-info .highlight div p {
-  font-size: 22px;
+  font-size: 1.38rem;
   font-weight: bold;
   line-height: 34px;
 }
@@ -100,7 +100,7 @@
 }
 
 .user-card .detailed-info .detailed-links ul li {
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 22px;
 }
 
@@ -113,7 +113,7 @@
 }
 
 .user-card .detailed-info .detailed-links ul li:not(:last-child) {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 
 .user-card .detailed-info .detailed-links ul li svg {
@@ -146,7 +146,7 @@
   }
 
   .user-card .primary-info .names-and-date .name h1 {
-    line-height: 39px;
+    line-height: 38px;
   }
 
   .user-card .primary-info .names-and-date .name p {
@@ -170,7 +170,7 @@
   }
 
   .user-card .primary-info .names-and-date .name h1 {
-    font-size: 16px;
+    font-size: 1.2rem;
     line-height: 24px;
   }
 
@@ -180,10 +180,10 @@
 
   .user-card .detailed-info .detailed-links ul {
     margin-right: unset;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .user-card .detailed-info .detailed-links ul li:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }

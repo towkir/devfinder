@@ -24,8 +24,8 @@
   border: 0;
   color: var(--text-primary);
   width: 100%;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1rem;
+  line-height: 24px;
   padding: 8px;
   caret-color: var(--color-blue);
   transition: color 0.3s ease-in-out;
@@ -37,7 +37,7 @@
 
 .searchbar button {
   font-family: inherit;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--color-white);
   background-color: var(--color-blue);
@@ -53,16 +53,10 @@
 
 @media screen and (max-width: 570px) {
   .searchbar {
-    padding: 7px;
+    padding: 8px;
   }
   .searchbar svg {
     width: 36px;
     margin: 0 10px;
-  }
-  .searchbar input[type="text"] {
-    font-size: 14px;
-  }
-  .searchbar button {
-    font-size: 14px;
   }
 }
