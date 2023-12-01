@@ -132,6 +132,7 @@
 
   .user-card .primary-info {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 24px;
   }
@@ -154,5 +155,35 @@
 
   .user-card .primary-info .names-and-date .date {
     line-height: 1.8;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .user-card {
+    padding: 32px 24px;
+  }
+
+  .user-card .primary-info .avatar {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+
+  .user-card .primary-info .names-and-date .name h1 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .user-card .detailed-info .detailed-links {
+    display: block;
+  }
+
+  .user-card .detailed-info .detailed-links ul {
+    margin-right: unset;
+    margin-bottom: 15px;
+  }
+
+  .user-card .detailed-info .detailed-links ul li:not(:last-child) {
+    margin-bottom: 15px;
   }
 }

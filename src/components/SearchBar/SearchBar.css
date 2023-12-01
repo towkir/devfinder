@@ -50,3 +50,19 @@
 :root[data-theme="dark"] .searchbar {
   box-shadow: none;
 }
+
+@media screen and (max-width: 570px) {
+  .searchbar {
+    padding: 7px;
+  }
+  .searchbar svg {
+    width: 36px;
+    margin: 0 10px;
+  }
+  .searchbar input[type="text"] {
+    font-size: 14px;
+  }
+  .searchbar button {
+    font-size: 14px;
+  }
+}
