@@ -10,6 +10,8 @@
   transition-property: color, background-color, box-shadow;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
+  position: relative;
+  z-index: 0;
 }
 
 .searchbar svg {
@@ -33,6 +35,15 @@
 
 .searchbar input[type="text"]:focus {
   outline: none;
+}
+
+.searchbar .error {
+  color: var(--color-red);
+  font-weight: bold;
+  position: absolute;
+  display: block;
+  right: 126px;
+  z-index: -1;
 }
 
 .searchbar button {
@@ -68,6 +79,10 @@
 
   .searchbar input[type="text"] {
     padding-left: 0;
+  }
+
+  .searchbar .error {
+    right: 100px;
   }
 
   .searchbar button {
