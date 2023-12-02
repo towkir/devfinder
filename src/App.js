@@ -7,6 +7,7 @@ function App() {
   let [userData, setUserData] = useState({});
   let [error, setError] = useState({});
   function fetchUserData(username) {
+    setError({});
     fetch(`https://api.github.com/users/${username}`).then(response => {
       let status = response.ok;
       response.json().then((data) => {
@@ -21,7 +22,7 @@ function App() {
   return (
     <div className="app">
       <Header/>
-      <SearchBar handleInput={fetchUserData}/>
+      <SearchBar errorMessage={error.message} handleInput={fetchUserData}/>
       <UserCard user={userData}/>
     </div>
   );
