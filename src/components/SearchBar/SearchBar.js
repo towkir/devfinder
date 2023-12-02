@@ -1,12 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import IconSearch from 'components/VectorIcons/IconSearch';
 import './SearchBar.css';
 
 function SearchBar({handleInput}) {
-  let [userName, setUserName] = useState('');
+  let [userName, setUserName] = useState('octocat');
   function handleUserNameChange(e) {
     setUserName(e.target.value);
   }
+  useEffect(() => {
+    handleInput(userName);
+  }, []);
   return (
     <div className="searchbar">
       <IconSearch/>
