@@ -39,6 +39,8 @@
   font-size: 1.63rem;
   line-height: 48px;
   font-weight: bold;
+  color: var(--text-primary);
+  transition: color 0.3s ease-in-out;
 }
 
 .user-card .primary-info .names-and-date .name p {
@@ -53,6 +55,8 @@
 .user-card .primary-info .names-and-date .date {
   font-size: 1rem;
   line-height: 48px;
+  color: var(--text-secondary);
+  transition: color 0.3s ease-in-out;
 }
 
 .user-card .detailed-info {
@@ -63,6 +67,8 @@
   font-size: 1rem;
   line-height: 24px;
   margin-bottom: 32px;
+  color: var(--text-secondary);
+  transition: color 0.3s ease-in-out;
 }
 
 .user-card .detailed-info .highlight {
@@ -73,20 +79,25 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  transition-property: color, background-color;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .user-card .detailed-info .highlight div .label {
   font-size: 0.88rem;
   line-height: 20px;
+  color: var(--text-secondary);
 }
 
 .user-card .detailed-info .highlight div p {
   font-size: 1.38rem;
   font-weight: bold;
   line-height: 34px;
+  color: var(--text-primary);
+}
+
+.user-card .detailed-info .highlight div .label,
+.user-card .detailed-info .highlight div p {
+  transition: color 0.3s ease-in-out;
 }
 
 .user-card .detailed-info .detailed-links {
@@ -102,6 +113,8 @@
 .user-card .detailed-info .detailed-links ul li {
   font-size: 1rem;
   line-height: 22px;
+  color: var(--text-secondary);
+  transition: color 0.3s ease-in-out;
 }
 
 .user-card .detailed-info .detailed-links ul li.unavailable {
