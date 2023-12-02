@@ -63,5 +63,6 @@ body #root {
 @media screen and (max-width: 570px) {
   html {
     font-size: 14px;
+    height: auto;
   }
 }
