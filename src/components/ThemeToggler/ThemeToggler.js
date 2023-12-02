@@ -9,7 +9,7 @@ function ThemeToggler() {
     document.documentElement.setAttribute('data-theme', currentTheme);
   }
   function saveThemeSettings(theme) {
-    setCurrentTheme(theme)
+    setCurrentTheme(theme);
     localStorage.setItem('devfinder-theme', theme);
   }
   useEffect(() => {
