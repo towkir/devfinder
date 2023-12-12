@@ -59,7 +59,12 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-.searchbar button:hover {
+.searchbar button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.searchbar button:not([disabled]):hover {
   background-color: var(--color-blue-light);
 }
 
