@@ -43,12 +43,12 @@ function UserCard({user}) {
           <ul>
             <li className={setDeadClass(user.location)}><IconLocation/> {user.location || 'Not Available'}</li>
             <li className={setDeadClass(user.blog)}>
-              <IconLink/> {user.blog ? <a href={user.blog} target="_blank">{user.blog}</a> : 'Not linked'}
+              <IconLink/> {user.blog ? <a href={user.blog} target="_blank">{user.blog}</a> : 'Not Available'}
             </li>
           </ul>
           <ul>
             <li className={setDeadClass(user.twitter_username)}><IconTwitter/> {user.twitter_username || 'Not Available'}</li>
-            <li className={setDeadClass(user.company)}><IconCompany/> {user.company || 'Not Set'}</li>
+            <li className={setDeadClass(user.company)}><IconCompany/> {user.company || 'Not Available'}</li>
           </ul>
         </div>
       </div>
