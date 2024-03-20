@@ -1,5 +1,5 @@
 # GitHub User Search | Devfinder
-![Design preview for the Pomodoro App Project](./preview.jpg)
+![Design preview for the Devfinder App Project](./preview.jpg)
 
 ### Description
 A simple webapp made with react to search GitHub users by their username and view a summary of their profile in a visually appealing design.
